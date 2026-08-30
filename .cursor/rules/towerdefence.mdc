@@ -1,0 +1,34 @@
+---
+description: Правила проекта Tower Defense
+globs: **/*
+alwaysApply: true
+---
+
+# Tower Defense — правила проекта
+
+## Стек
+
+- Один файл `index.html` — HTML, CSS, JS inline
+- Canvas 2D, чистый JavaScript, **без внешних библиотек**
+- Целевой FPS: 60, лёгкий game loop
+
+## Игра (кратко)
+
+- Сетка 10×10, клетка 50 px, путь зигзагом (строки 1–5)
+- Башни: archer (10 dmg, range 150, $50), mage (25 dmg, range 120, $100, slow 50%)
+- Враги: 5 за волну, HP растёт линейно, 10 монет за kill
+- Debug-панель: клавиша D
+
+## Документация
+
+- ТЗ: `docs/game-spec.md`
+- Сессии AI: `docs/sessions/YYYY-MM-DD-описание.md`
+- Изменения: `CHANGELOG.md`
+
+При новой фиче — обновить spec (если меняется дизайн), session-файл и changelog.
+
+## Стиль кода
+
+- Минимальный diff, без over-engineering
+- Комментарии только для неочевидной логики
+- Сохранять компактность файла
